@@ -14,4 +14,4 @@ See the Spine [runtime documentation](http://esotericsoftware.com/spine-document
 
 ## Versioning
 
-The code provided here is continuously under development. Generally the latest Git `master` source works with the data exported from the latest version of Spine. The Spine version can be [frozen](http://esotericsoftware.com/spine-settings#Version) at a specific Spine version that matches the Spine Runtimes source being used. Occaisionally the Spine Runtimes are [tagged](https://github.com/EsotericSoftware/spine-runtimes/releases) to work with a specific Spine version.
+The code provided here.
