@@ -1,17 +1,13 @@
-# Spine Runtimes
+## Spine Runtimes
 
-This GitHub project hosts the Spine Runtimes which are needed to use [Spine](http://esotericsoftware.com/) 2D skeletal animation with various game toolkits.
+对spine runtime进行修改，新增BatchSkeletonAnimation类（继承自SkeletonAnimation），使用QuadCommand代替spine原有的CustomCommand,使spine的渲染过程能够利用Cocos2d-x的 Auto-Batch机制，降低Gl-call次数。
+##效果比对
+SkeletonAnimation：Draw Call 28次
+![](https://raw.githubusercontent.com/dzfish/spine-runtimes/master/spine-cocos2dx/3/example/skeleton.jpg)  
 
-## Licensing
-
-The Spine Runtimes may only be used for personal or internal use, typically to evaluate Spine before purchasing. If you would like to incorporate the Spine Runtimes into your applications, distribute software containing the Spine Runtimes, or modify the Spine Runtimes, then you will need a valid [Spine license](https://esotericsoftware.com/spine-purchase). Please see the [Spine Runtimes Software License](https://github.com/EsotericSoftware/spine-runtimes/blob/master/LICENSE) for detailed information.
-
-The Spine Runtimes are developed with the intent to be used with data exported from Spine. By purchasing Spine, `Section 2` of the [Spine Software License](https://esotericsoftware.com/files/license.txt) grants the right to create and distribute derivative works of the Spine Runtimes.
-
-## Documentation
-
-See the Spine [runtime documentation](http://esotericsoftware.com/spine-documentation#runtimesTitle) for documentation applicable to all runtimes. See each runtime's `README.md` for runtime specific documentation.
+BatchSkeletonAnimation：Draw Call 1次
+![](https://raw.githubusercontent.com/dzfish/spine-runtimes/master/spine-cocos2dx/3/example/batchskeleton.jpg)  
 
 ## Versioning
 
-The code provided here.
+支持cocos2dx-3.3及以上
