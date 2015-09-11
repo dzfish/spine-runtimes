@@ -16,17 +16,17 @@ namespace spine {
 		static BatchSkeletonAnimation* createWithFile(const std::string& skeletonDataFile, const std::string& atlasFile, float scale = 1);
 		
 		
-		BatchSkeletonAnimation::BatchSkeletonAnimation(spSkeletonData *skeletonData)
+		BatchSkeletonAnimation(spSkeletonData *skeletonData)
 			: SkeletonAnimation(skeletonData) {
 			initialize();
 		}
 
-		BatchSkeletonAnimation::BatchSkeletonAnimation(const std::string& skeletonDataFile, spAtlas* atlas, float scale)
+		BatchSkeletonAnimation(const std::string& skeletonDataFile, spAtlas* atlas, float scale)
 			: SkeletonAnimation(skeletonDataFile, atlas, scale) {
 			initialize();
 		}
 
-		BatchSkeletonAnimation::BatchSkeletonAnimation(const std::string& skeletonDataFile, const std::string& atlasFile, float scale)
+		BatchSkeletonAnimation(const std::string& skeletonDataFile, const std::string& atlasFile, float scale)
 			: SkeletonAnimation(skeletonDataFile, atlasFile, scale) {
 			initialize();
 		}
